@@ -1,8 +1,12 @@
 # warcmock
 Proxy for serving WARC files.
 
-Deploy the web application archive (war) file in target/ as
-the ROOT application of your servlet container (e.g., Apache Tomcat).
+Build the web application archive (war) with Maven:
+
+   mvn clean package
+
+Deploy the war file in target/ as the ROOT application of your servlet container
+(e.g., Apache Tomcat).
 
 You can configure the location of the WARC file in ./src/main/webapp/WEB-INF/web.xml:
 
